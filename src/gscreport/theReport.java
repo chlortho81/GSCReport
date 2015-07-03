@@ -39,7 +39,8 @@ class Dealerec {
     // RE: Field J1 - What is this, sales for the next day??
 
     /*
-        This method will calculate the dealer's booked-to-sold ratio. It must return a percentage. 
+        This method will calculate the dealer's booked-to-sold ratio. It must 
+        return a percentage. 
     */
     double calc_booked_sold_percent() {  
         double x = ((booked / totalsold * 100) + .5);
@@ -48,7 +49,8 @@ class Dealerec {
         return x;
     }
     /*
-        This method will calculate the dealer's booked-to-sold ratio. It must return a percentage. 
+        This method will calculate the dealer's first time closing percentage.
+        It must return a percentage. 
     */    
     double calc_first_close_percent() {  // This needs to return a percentage
         double y = ((firstsold / firstups * 100) + .5);
@@ -56,14 +58,20 @@ class Dealerec {
         System.out.println();
         return y;
     }
-
+     /*
+        This method will calculate the dealer's be back closing percentage.
+        It must return a percentage. 
+    */
     double calc_bb_close_percent() { // This needs to return a percentage
         double z = ((bbsold / bbups * 100) + .5);
         System.out.printf("The BeBack close percentage is %.0f %%", z);
         System.out.println();
         return z;
     }
-
+    /*
+        This method will calculate the dealer's total closing percentage.
+        It must return a percentage. 
+    */
     double calc_total_close_percent() { // This needs to return a percentage
         double w = ((totalsold / totalups * 100) + .5);
         System.out.printf("The total closing percentage is %.0f %%", w);
